@@ -579,6 +579,7 @@ nav a:hover {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .cabecera-azul {
@@ -701,6 +702,13 @@ nav a:hover {
     align-items: flex-start;
     gap: 15px;
     border: 1px solid #eaeaea;
+    transition: trasnform 0.3s ease, border-color 0.3s ease;
+}
+
+.info-caja:hover{
+
+    transform: translateX(8px);
+    border-color: var(--color-azul);
 }
 
 .icono-contacto {
@@ -966,7 +974,7 @@ nav a:hover {
 }
 
 .glow-verde{
-     box-shadow: 0 0 20px rgb(0, 255, 0);
+     box-shadow: 0 0 20px rgba(0, 255, 0, 0.7);
 }
 .glow-celeste {
     box-shadow: 0 0 20px rgba(135, 206, 235, 0.8);

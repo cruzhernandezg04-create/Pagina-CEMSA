@@ -11,6 +11,8 @@
     <!-- Preconexiones para acelerar carga externa -->
     <link rel="preconnect" href="https://www.google.com" crossorigin>
     <link rel="preconnect" href="https://www.facebook.com" crossorigin>
+    <!--Animaciones AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVL1WCKRJ7"></script>
     <script>
@@ -23,377 +25,365 @@
 </head>
 
 <body>
+    <!--BARRA DE NAVEGACION-->
+    <header>
+        <div class="logo-container">
+            <img src="img/logoCemsa.webp" alt="Logo CEMSA" class="logo-img">
+        </div>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación">☰</button>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <title>CEMSA </title>
-    </head>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="enlaces.html">Enlaces</a></li>
+                <li><a href="index.html#contacto">Contactanos</a></li>
+            </ul>
+        </nav>
 
-    <body>
-        <!--BARRA DE NAVEGACION-->
-        <header>
-            <div class="logo-container">
-                <img src="img/logoCemsa.webp" alt="Logo CEMSA" class="logo-img">
+        <div class="header-actions">
+        </div>
+    </header>
+
+    <main>
+        <!-- SECCION GRUPO CEMSA -->
+        <section class="hero-grupo-cemsa">
+            <div class="hero-gc-contenedor" data-aos="fade-up" data-aos-duration="1000">
+                <div class="gc-imagen" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="img/GC22.webp" loading="lazy" alt="Logo Grupo CEMSA">
+                </div>
+                <div class="gc-texto" data-aos="fade-left" data-aos-delay="100">
+                    <span class="etiqueta-texto fondo-blanco">Enlaces:</span>
+                    <h2>CEMSA pertenece a Grupo CEMSA</h2>
+                    <p>Un conjunto de empresas aliadas listas para brindar soluciones integrales. Contamos con
+                        colaboradores y socios que comparten la ambición de adaptarse a todas tus necesidades,
+                        conformando un sólido equipo de trabajo. Conoce más sobre nuestros colaboradores.</p>
+                    <a href="G.html" target="_blank" class="btn-gc">Ir a Grupo Cemsa</a>
+                </div>
             </div>
-            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación">☰</button>
+        </section>
 
-            <nav id="nav-menu">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="productos.html">Productos</a></li>
-                    <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="enlaces.html">Enlaces</a></li>
-                    <li><a href="index.html#contacto">Contactanos</a></li>
-                </ul>
-            </nav>
-
-            <div class="header-actions">
+        <!-- SECCION INTRODUCCION SOCIOS -->
+        <section class="intro-socios">
+            <div class="socios-header-texto" data-aos="fade-right">
+                <h2 class="titulo-seccion">Socios Comerciales:</h2>
+                <p>Contamos con socios comerciales para
+                    brindarte los mejores productos y de calidad.</p>
             </div>
-        </header>
+            <div class="socios-header-img" data-aos="fade-left">
+                <img src="img/Socios.webp" loading="lazy" alt="Socios">
+            </div>
+        </section>
 
-        <main>
-            <!-- SECCION GRUPO CEMSA -->
-            <section class="hero-grupo-cemsa">
-                <div class="hero-gc-contenedor">
-                    <div class="gc-imagen">
-                        <img src="img/GC22.webp" loading="lazy" alt="Logo Grupo CEMSA">
-                    </div>
-                    <div class="gc-texto">
-                        <span class="etiqueta-texto fondo-blanco">Enlaces:</span>
-                        <h2>CEMSA pertenece a Grupo CEMSA</h2>
-                        <p>Un conjunto de empresas aliadas listas para brindar soluciones integrales. Contamos con
-                            colaboradores y socios que comparten la ambición de adaptarse a todas tus necesidades,
-                            conformando un sólido equipo de trabajo. Conoce más sobre nuestros colaboradores.</p>
-                        <a href="G.html" target="_blank" class="btn-gc">Ir a Grupo Cemsa</a>
-                    </div>
+        <!--SECCIÓN DE SOCIOS-->
+        <section class="grid-socios-comerciales">
+
+            <!--Socio AkzoNobel-->
+            <div class="card-socio" data-aos="fade-up" data-aos-delay="100">
+                <div class="socio-logo">
+                    <img src="img/akzonobel.webp" loading="lazy" alt="AkzoNobel">
                 </div>
-            </section>
+                <h3>AKZO NOBEL</h3>
+                <p>Empresa multinacional especializada en pinturas decorativas, pinturas industriales y productos
+                    químicos especializados. Es el principal proveedor de revestimientos para madera de interiores,
+                    acabados y materiales a base de madera.</p>
+                <a href="https://www.sikkensvr.com/index.php?id=1" target="_blank" class="btn-socio">Ver más...</a>
+            </div>
 
-            <!-- SECCION INTRODUCCION SOCIOS -->
-            <section class="intro-socios">
-                <div class="socios-header-texto">
-                    <h2 class="titulo-seccion">Socios Comerciales:</h2>
-                    <p>Contamos con socios comerciales para
-                        brindarte los mejores productos y de calidad.</p>
+            <!--Socio Hempel-->
+            <div class="card-socio" data-aos="fade-up" data-aos-delay="200">
+                <div class="socio-logo">
+                    <img src="img/Hempel.webp" loading="lazy" alt="Hempel">
                 </div>
-                <div class="socios-header-img">
-                    <img src="img/Socios.webp" loading="lazy" alt="Socios">
+                <h3>HEMPEL</h3>
+                <p>Es un proveedor global de revestimientos y servicios en las industrias de protección, marina,
+                    decoración, contenedores y yates. Las fábricas y los puntos de almacenamiento de Hempel se
+                    establecen en todas las regiones.</p>
+                <a href="https://www.hempel.com/es-es" target="_blank" class="btn-socio">Ver más...</a>
+            </div>
+
+            <!--Socio International-->
+            <div class="card-socio" data-aos="fade-up" data-aos-delay="300">
+                <div class="socio-logo">
+                    <img src="img/International.webp" loading="lazy" alt="International">
                 </div>
-            </section>
+                <h3>INTERNATIONAL</h3>
+                <p>Es uno de los mayores fabricantes mundiales de pintura de alto rendimiento para embarcaciones,
+                    revestimientos para yates y protección marina.</p>
+                <a href="https://www.international-yachtpaint.com/es/es/" target="_blank" class="btn-socio">Ver
+                    más...</a>
+            </div>
 
-            <!--SECCIÓN DE SOCIOS-->
-            <section class="grid-socios-comerciales">
-
-                <!--Socio AkzoNobel-->
-                <div class="card-socio">
-                    <div class="socio-logo">
-                        <img src="img/akzonobel.webp" loading="lazy" alt="AkzoNobel">
-                    </div>
-                    <h3>AKZO NOBEL</h3>
-                    <p>Empresa multinacional especializada en pinturas decorativas, pinturas industriales y productos
-                        químicos especializados. Es el principal proveedor de revestimientos para madera de interiores,
-                        acabados y materiales a base de madera.</p>
-                    <a href="https://www.sikkensvr.com/index.php?id=1" target="_blank" class="btn-socio">Ver más...</a>
+            <!--Socio Sherwin Williams-->
+            <div class="card-socio" data-aos="fade-up" data-aos-delay="400">
+                <div class="socio-logo">
+                    <img src="img/Sherwin.webp" loading="lazy" alt="Sherwin Williams">
                 </div>
+                <h3>SHERWIN WILLIAMS</h3>
+                <p>Empresa dedicada a la producción y distribución de pinturas y recubrimientos de alta calidad, con
+                    150 años de experiencia dedicada al desarrollo, fabricación y venta de pinturas y
+                    recubrimientos, así como a la comercialización de productos relacionados.</p>
+                <a href="https://www.sherwin-williams.com.mx" target="_blank" class="btn-socio">Ver más...</a>
+            </div>
 
-                <!--Socio Hempel-->
-                <div class="card-socio">
-                    <div class="socio-logo">
-                        <img src="img/Hempel.webp" loading="lazy" alt="Hempel">
-                    </div>
-                    <h3>HEMPEL</h3>
-                    <p>Es un proveedor global de revestimientos y servicios en las industrias de protección, marina,
-                        decoración, contenedores y yates. Las fábricas y los puntos de almacenamiento de Hempel se
-                        establecen en todas las regiones.</p>
-                    <a href="https://www.hempel.com/es-es" target="_blank" class="btn-socio">Vermás...</a>
+            <!-- Socio PPG-->
+            <div class="card-socio" data-aos="fade-up" data-aos-delay="100">
+                <div class="socio-logo">
+                    <img src="img/PPG.webp" loading="lazy" alt="PPG">
                 </div>
+                <h3>PPG</h3>
+                <p>Es el proveedor ideal para suministrar recubrimientos para cualquier superficie y líder mundial
+                    de acabados automotrices, industriales y arquitectónicos.</p>
+                <a href="https://mexico.ppg.com" target="_blank" class="btn-socio">Ver más...</a>
+            </div>
 
-                <!--Socio International-->
-                <div class="card-socio">
-                    <div class="socio-logo">
-                        <img src="img/International.webp" loading="lazy" alt="International">
-                    </div>
-                    <h3>INTERNATIONAL</h3>
-                    <p>Es uno de los mayores fabricantes mundiales de pintura de alto rendimiento para embarcaciones,
-                        revestimientos para yates y protección marina.</p>
-                    <a href="https://www.international-yachtpaint.com/es/es/" target="_blank" class="btn-socio">Ver
-                        más...</a>
+            <!-- Socio Norton -->
+            <div class="card-socio" data-aos="fade-up" data-aos-delay="200">
+                <div class="socio-logo">
+                    <img src="img/Norton.webp" loading="lazy" alt="Norton">
                 </div>
+                <h3>NORTON</h3>
+                <p>Empresa líder mundial en abrasivos con más de 130 años, proporciona la cartera de productos más
+                    amplia para soluciones de rectificado, corte, matizado, acabado y pulido para todos los
+                    mercados.</p>
+                <a href="https://www.nortonabrasives.com/es-mx" target="_blank" class="btn-socio">Ver más...</a>
+            </div>
 
-                <!--Socio Sherwin Williams-->
-                <div class="card-socio">
-                    <div class="socio-logo">
-                        <img src="img/Sherwin.webp" loading="lazy" alt="Sherwin Williams">
-                    </div>
-                    <h3>SHERWIN WILLIAMS</h3>
-                    <p>Empresa dedicada a la producción y distribución de pinturas y recubrimientos de alta calidad, con
-                        150 años de experiencia dedicada al desarrollo, fabricación y venta de pinturas y
-                        recubrimientos, así como a la comercialización de productos relacionados.</p>
-                    <a href="https://www.sherwin-williams.com.mx" target="_blank" class="btn-socio">Ver más...</a>
+            <!-- Socio Roberlo -->
+            <div class="card-socio" data-aos="fade-up" data-aos-delay="300">
+                <div class="socio-logo">
+                    <img src="img/rOBERLO.webp" loading="lazy" alt="Roberlo">
                 </div>
+                <h3>ROBERLO</h3>
+                <p>Es una empresa fundada en 1968 en Gerona, especializada en el desarrollo, fabricación y venta de
+                    pinturas y soluciones de reparación para el repintado de automóviles y sectores industriales.</p>
+                <a href="https://es.roberlo.com" target="_blank" class="btn-socio">Ver más...</a>
+            </div>
 
-                <!-- Socio PPG-->
-                <div class="card-socio">
-                    <div class="socio-logo">
-                        <img src="img/PPG.webp" loading="lazy" alt="PPG">
-                    </div>
-                    <h3>PPG</h3>
-                    <p>Es el proveedor ideal para suministrar recubrimientos para cualquier superficie y líder mundial
-                        de acabados automotrices, industriales y arquitectónicos.</p>
-                    <a href="https://mexico.ppg.com" target="_blank" class="btn-socio">Ver más...</a>
+            <!-- Socio 3M -->
+            <div class="card-socio" data-aos="fade-up" data-aos-delay="400">
+                <div class="socio-logo">
+                    <img src="img/3m.webp" loading="lazy" alt="3M">
                 </div>
+                <h3>3M</h3>
+                <p>Es una compañía multinacional dedicada a investigar, desarrollar, manufacturar y comercializar
+                    tecnologías diversificadas, ofreciendo productos y servicios en diversas áreas tales como
+                    equipamiento industrial.</p>
+                <a href="https://www.3m.com.mx/3M/es_MX/inicio/" target="_blank" class="btn-socio">Ver más...</a>
+            </div>
+        </section>
+    </main>
 
-                <!-- Socio Norton -->
-                <div class="card-socio">
-                    <div class="socio-logo">
-                        <img src="img/Norton.webp" loading="lazy" alt="Norton">
-                    </div>
-                    <h3>NORTON</h3>
-                    <p>Empresa líder mundial en abrasivos con más de 130 años, proporciona la cartera de productos más
-                        amplia para soluciones de rectificado, corte, matizado, acabado y pulido para todos los
-                        mercados.</p>
-                    <a href="https://www.nortonabrasives.com/es-mx" target="_blank" class="btn-socio">Ver más...</a>
-                </div>
-
-                <!-- Socio Roberlo -->
-                <div class="card-socio">
-                    <div class="socio-logo">
-                        <img src="img/rOBERLO.webp" loading="lazy" alt="Roberlo">
-                    </div>
-                    <h3>ROBERLO</h3>
-                    <p>Es una empresa fundada en 1968 en Gerona, especializada en el desarrollo, fabricación y venta de
-                        pinturas y soluciones de reparación para el repintado de automóviles y sectores industriales.
-                    </p>
-                    <a href="https://es.roberlo.com" target="_blank" class="btn-socio">Ver más...</a>
+    <!--SECCION FOOTER-->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top-row">
+                <!--Columna 1-->
+                <div class="footer-col">
+                    <img src="img/Cemsapng.webp" loading="lazy" alt="Logo CEMSA" class="footer-logo-img">
                 </div>
 
-                <!-- Socio 3M -->
-                <div class="card-socio">
-                    <div class="socio-logo">
-                        <img src="img/3m.webp" loading="lazy" alt="3M">
-                    </div>
-                    <h3>3M</h3>
-                    <p>Es una compañía multinacional dedicada a investigar, desarrollar, manufacturar y comercializar
-                        tecnologías diversificadas, ofreciendo productos y servicios en diversas áreas tales como
-                        equipamiento industrial.</p>
-                    <a href="https://www.3m.com.mx/3M/es_MX/inicio/" target="_blank" class="btn-socio">Ver más...</a>
-                </div>
-            </section>
-        </main>
-
-        <!--SECCION FOOTER-->
-        <footer class="footer">
-            <div class="footer-container">
-                <div class="footer-top-row">
-                    <!--Columna 1-->
-                    <div class="footer-col">
-                        <img src="img/Cemsapng.webp" loading="lazy" alt="Logo CEMSA" class="footer-logo-img">
-                    </div>
-
-                    <!--Columna 2-->
-                    <div class="footer-col">
-                        <h4>NAVEGACIÓN</h4>
-                        <ul class="footer-links">
-                            <li><a href="index.html">Inicio</a></li>
-                            <li><a href="productos.html">Productos</a></li>
-                            <li><a href="servicios.html">Servicios</a></li>
-                            <li><a href="enlaces.html">Enlaces</a></li>
-                            <li><a href="index.html#contacto">Contactanos</a></li>
-                        </ul>
-                    </div>
-
-                    <!--Columna 3-->
-                    <div class="footer-col">
-                        <h4>SÍGUENOS</h4>
-                        <div class="social-icons vertical">
-                            <a href="https://www.facebook.com/CEMSARecubrimientos#" target="_blank" class="icono-red">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg"
-                                    alt="Facebook">
-                            </a>
-
-                            <a href="https://x.com/cemsamx?lang=es" target="_blank" class="icono-red">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg" alt="X">
-                            </a>
-                        </div>
-                    </div>
+                <!--Columna 2-->
+                <div class="footer-col">
+                    <h4>NAVEGACIÓN</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="enlaces.html">Enlaces</a></li>
+                        <li><a href="index.html#contacto">Contactanos</a></li>
+                    </ul>
                 </div>
 
-                <div class="footer-col alianzas-col">
-                    <h4>NUESTRO GRUPO Y ALIANZAS</h4>
-                    <div class="red-alianzas">
-                        <div class="alianzas-fila-superior">
-                            <div class="alianzas-bloque">
-                                <a href="https://www.facebook.com/TiendasUrbanCoatings" target="_blank"
-                                    class="alianza-logo glow-rojo"><img src="img/Urban.webp" loading="lazy"
-                                        alt="Urban"></a>
-                                <a href="https://www.facebook.com/CEMSA-Recubrimientos-103351411241119" target="_blank"
-                                    class="alianza-logo glow-azul"><img src="img/Cemsa.webp" loading="lazy"
-                                        alt="CEMSA"></a>
-                                <a href="https://www.facebook.com/jarlserv?mibextid=ZbWKwL" target="_blank"
-                                    class="alianza-logo glow-negro"><img src="img/Jarl.webp" loading="lazy"
-                                        alt="Jarl"></a>
-                            </div>
+                <!--Columna 3-->
+                <div class="footer-col">
+                    <h4>SÍGUENOS</h4>
+                    <div class="social-icons vertical">
+                        <a href="https://www.facebook.com/CEMSARecubrimientos#" target="_blank" class="icono-red">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg"
+                                alt="Facebook">
+                        </a>
 
-                            <div class="alianzas-centro">
-                                <a href="G.html" target="_blank" class="alianza-logo alianza-principal glow-blanco"><img
-                                        src="img/GC22.webp" loading="lazy" alt="GC Grupo CEMSA"></a>
-                            </div>
+                        <a href="https://x.com/cemsamx?lang=es" target="_blank" class="icono-red">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg" alt="X">
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-                            <div class="alianzas-bloque">
-                                <a href="https://www.facebook.com/nazareosiap/?mibextid=ZbWKwL" target="_blank"
-                                    class="alianza-logo glow-naranja"><img src="img/Nazareos.webp" loading="lazy"
-                                        alt="Nazareos"></a>
-                                <a href="https://www.facebook.com/nazareosac1" target="_blank"
-                                    class="alianza-logo glow-rosa"><img src="img/Nazareos AC.webp" loading="lazy"
-                                        alt="Nazareos AC"></a>
-                                <a href="https://www.facebook.com/profile.php?id=100068549594726" target="_blank"
-                                    class="alianza-logo glow-gris"><img src="img/E&C.png" loading="lazy" alt="E&C"></a>
-                            </div>
+            <div class="footer-col alianzas-col">
+                <h4>NUESTRO GRUPO Y ALIANZAS</h4>
+                <div class="red-alianzas">
+                    <div class="alianzas-fila-superior">
+                        <div class="alianzas-bloque">
+                            <a href="https://www.facebook.com/TiendasUrbanCoatings" target="_blank"
+                                class="alianza-logo glow-rojo"><img src="img/Urban.webp" loading="lazy" alt="Urban"></a>
+                            <a href="https://www.facebook.com/CEMSA-Recubrimientos-103351411241119" target="_blank"
+                                class="alianza-logo glow-azul"><img src="img/Cemsa.webp" loading="lazy" alt="CEMSA"></a>
+                            <a href="https://www.facebook.com/jarlserv?mibextid=ZbWKwL" target="_blank"
+                                class="alianza-logo glow-negro"><img src="img/Jarl.webp" loading="lazy" alt="Jarl"></a>
                         </div>
 
-                        <div class="alianzas-fila-inferior">
-                            <a href="https://www.facebook.com/EPP-107946225493285" target="_blank"
-                                class="alianza-logo glow-verde"><img src="img/EPP.webp" loading="lazy" alt="EPP"></a>
-                            <a href="https://www.facebook.com/KumonSanJuanTultepec" target="_blank"
-                                class="alianza-logo glow-celeste"><img src="img/Kumon.webp" loading="lazy"
-                                    alt="Kumon"></a>
-                            <a href="https://www.facebook.com/profile.php?id=61572248146579" target="_blank"
-                                class="alianza-logo glow-cian"><img src="img/Spacioss.png" loading="lazy"
-                                    alt="Spacioss"></a>
+                        <div class="alianzas-centro">
+                            <a href="G.html" target="_blank" class="alianza-logo alianza-principal glow-blanco"><img
+                                    src="img/GC22.webp" loading="lazy" alt="GC Grupo CEMSA"></a>
+                        </div>
+
+                        <div class="alianzas-bloque">
+                            <a href="https://www.facebook.com/nazareosiap/?mibextid=ZbWKwL" target="_blank"
+                                class="alianza-logo glow-naranja"><img src="img/Nazareos.webp" loading="lazy"
+                                    alt="Nazareos"></a>
+                            <a href="https://www.facebook.com/nazareosac1" target="_blank"
+                                class="alianza-logo glow-rosa"><img src="img/Nazareos AC.webp" loading="lazy"
+                                    alt="Nazareos AC"></a>
+                            <a href="https://www.facebook.com/profile.php?id=100068549594726" target="_blank"
+                                class="alianza-logo glow-gris"><img src="img/E&C.png" loading="lazy" alt="E&C"></a>
                         </div>
                     </div>
+
+                    <div class="alianzas-fila-inferior">
+                        <a href="https://www.facebook.com/EPP-107946225493285" target="_blank"
+                            class="alianza-logo glow-verde"><img src="img/EPP.webp" loading="lazy" alt="EPP"></a>
+                        <a href="https://www.facebook.com/KumonSanJuanTultepec" target="_blank"
+                            class="alianza-logo glow-celeste"><img src="img/Kumon.webp" loading="lazy" alt="Kumon"></a>
+                        <a href="https://www.facebook.com/profile.php?id=61572248146579" target="_blank"
+                            class="alianza-logo glow-cian"><img src="img/Spacioss.png" loading="lazy"
+                                alt="Spacioss"></a>
+                    </div>
                 </div>
-            </div>
-            <!--CREDITOS-->
-            <div class="footer-bottom">
-                <p>© Designed by JARL / Ing. Yair Maldonado / Lic. Karen Moreno - CEMSA 2026 Todos los Derechos
-                    Reservados.
-                </p>
-            </div>
-        </footer>
-
-        <!--SISTEMA DE COOKIES y GOOGLE ANALYTICS-->
-
-        <!-- 1. ConfiguraciOn de Google AnalyticS-->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
-
-            // Revisa si el usuario ya habIa aceptado antes, si no bloquea el rastreo por defecto
-            let estadoPrevio = localStorage.getItem('cookiesAnaliticas') === 'true' ? 'granted' : 'denied';
-
-            gtag('consent', 'default', {
-                'analytics_storage': estadoPrevio
-            });
-        </script>
-
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVL1WCKRJ7"></script>
-        <script>
-            gtag('js', new Date());
-            gtag('config', 'G-CVL1WCKRJ7');
-        </script>
-
-        <!-- 2. Banner de cookies-->
-        <div id="cookie-banner" class="cookie-banner">
-            <div class="cookie-texto">
-                <h3 style="margin-top:0; color:var(--color-azul);">Privacidad y Cookies</h3>
-                <p>Utilizamos cookies propias y de terceros para fines analíticos y para mostrarte contenido
-                    personalizado.
-                    Puedes aceptar todas las cookies, rechazarlas o configurar tus preferencias.</p>
-            </div>
-            <div class="cookie-botones">
-                <button id="btn-configurar" class="btn-cookie btn-secundario">Configurar</button>
-                <button id="btn-rechazar" class="btn-cookie btn-secundario">Rechazar</button>
-                <button id="btn-aceptar" class="btn-cookie btn-principal">Aceptar Todas</button>
             </div>
         </div>
-
-        <!-- 3. Modal de configuracion-->
-        <div id="cookie-modal" class="cookie-modal">
-            <div class="cookie-modal-contenido">
-                <h3 style="color:var(--color-azul); margin-top:0;">Configuración de Cookies</h3>
-                <p style="font-size: 0.9rem; color: #555;">Selecciona qué tipo de cookies deseas permitir en tu
-                    navegador:
-                </p>
-
-                <div class="opcion-cookie">
-                    <label>
-                        <input type="checkbox" checked disabled>
-                        <strong>Técnicas (Obligatorias)</strong>
-                    </label>
-                    <p>Son necesarias para que la página funcione. No se pueden desactivar.</p>
-                </div>
-
-                <div class="opcion-cookie">
-                    <label>
-                        <input type="checkbox" id="check-analiticas" checked>
-                        <strong>Google Analytics</strong>
-                    </label>
-                    <p>Nos ayudan a entender cómo usas la página para mejorar su diseño y funcionalidad.</p>
-                </div>
-
-                <button id="btn-guardar-config" class="btn-cookie btn-principal"
-                    style="width:100%; margin-top:20px;">Guardar Preferencias</button>
-            </div>
+        <!--CREDITOS-->
+        <div class="footer-bottom">
+            <p>© Designed by JARL / Ing. Yair Maldonado / Lic. Karen Moreno - CEMSA 2026 Todos los Derechos
+                Reservados.
+            </p>
         </div>
+    </footer>
 
-        <!-- 4. Logica de los botones -->
-        <script>
-            const bannerCookies = document.getElementById('cookie-banner');
-            const modalCookies = document.getElementById('cookie-modal');
+    <!--SCRIPTS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-            // Muestra el banner si es la primera vez que entra
-            if (!localStorage.getItem('estadoCookies')) {
-                bannerCookies.classList.add('activo');
-            }
+    <!--SISTEMA DE COOKIES y GOOGLE ANALYTICS-->
+    <script>
+        // Inicializar Animaciones AOS (once: true)
+        AOS.init({ once: true, offset: 100 });
 
-            // Funcion para activar Google Analytics y guardar en localStorage
-            function activarAnalytics(permitir) {
-                const estado = permitir ? 'granted' : 'denied';
-                gtag('consent', 'update', { 'analytics_storage': estado });
-                localStorage.setItem('cookiesAnaliticas', permitir.toString());
-            }
+        //1. ConfiguraciOn de Google AnalyticS
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
 
-            // Botn Aceptar Todas
-            document.getElementById('btn-aceptar').addEventListener('click', () => {
-                localStorage.setItem('estadoCookies', 'aceptadas');
-                activarAnalytics(true);
-                bannerCookies.classList.remove('activo');
-            });
+        // Revisa si el usuario ya habIa aceptado antes, si no bloquea el rastreo por defecto
+        let estadoPrevio = localStorage.getItem('cookiesAnaliticas') === 'true' ? 'granted' : 'denied';
 
-            // Boton Rechazar
-            document.getElementById('btn-rechazar').addEventListener('click', () => {
-                localStorage.setItem('estadoCookies', 'rechazadas');
-                activarAnalytics(false);
-                bannerCookies.classList.remove('activo');
-            });
+        gtag('consent', 'default', {
+            'analytics_storage': estadoPrevio
+        });
+    </script>
 
-            // Botones de configuracion
-            document.getElementById('btn-configurar').addEventListener('click', () => {
-                modalCookies.classList.add('activo');
-            });
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVL1WCKRJ7"></script>
+    <script>
+        gtag('js', new Date());
+        gtag('config', 'G-CVL1WCKRJ7');
+    </script>
 
-            document.getElementById('btn-guardar-config').addEventListener('click', () => {
-                const analiticasActivadas = document.getElementById('check-analiticas').checked;
-                localStorage.setItem('estadoCookies', 'personalizadas');
-                activarAnalytics(analiticasActivadas);
-                modalCookies.classList.remove('activo');
-                bannerCookies.classList.remove('activo');
-            });
-        </script>
+    <!-- 2. Banner de cookies-->
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-texto">
+            <h3 style="margin-top:0; color:var(--color-azul);">Privacidad y Cookies</h3>
+            <p>Utilizamos cookies propias y de terceros para fines analíticos y para mostrarte contenido personalizado.
+                Puedes aceptar todas las cookies, rechazarlas o configurar tus preferencias.</p>
+        </div>
+        <div class="cookie-botones">
+            <button id="btn-configurar" class="btn-cookie btn-secundario">Configurar</button>
+            <button id="btn-rechazar" class="btn-cookie btn-secundario">Rechazar</button>
+            <button id="btn-aceptar" class="btn-cookie btn-principal">Aceptar Todas</button>
+        </div>
+    </div>
 
-        <script>
-            // FUNCIONAMIENTO DEL MENU HAMBURGUESA
-            const menuToggle = document.getElementById('menu-toggle');
-            const navMenu = document.getElementById('nav-menu');
+    <!-- 3. Modal de configuracion-->
+    <div id="cookie-modal" class="cookie-modal">
+        <div class="cookie-modal-contenido">
+            <h3 style="color:var(--color-azul); margin-top:0;">Configuración de Cookies</h3>
+            <p style="font-size: 0.9rem; color: #555;">Selecciona qué tipo de cookies deseas permitir en tu navegador:
+            </p>
 
-            menuToggle.addEventListener('click', () => {
-                navMenu.classList.toggle('activo');
-            });
-        </script>
+            <div class="opcion-cookie">
+                <label>
+                    <input type="checkbox" checked disabled>
+                    <strong>Técnicas (Obligatorias)</strong>
+                </label>
+                <p>Son necesarias para que la página funcione. No se pueden desactivar.</p>
+            </div>
 
-    </body>
+            <div class="opcion-cookie">
+                <label>
+                    <input type="checkbox" id="check-analiticas" checked>
+                    <strong>Google Analytics</strong>
+                </label>
+                <p>Nos ayudan a entender cómo usas la página para mejorar su diseño y funcionalidad.</p>
+            </div>
+
+            <button id="btn-guardar-config" class="btn-cookie btn-principal"
+                style="width:100%; margin-top:20px;">Guardar Preferencias</button>
+        </div>
+    </div>
+
+    <!-- 4. Logica de los botones -->
+    <script>
+        const bannerCookies = document.getElementById('cookie-banner');
+        const modalCookies = document.getElementById('cookie-modal');
+
+        // Muestra el banner si es la primera vez que entra
+        if (!localStorage.getItem('estadoCookies')) {
+            bannerCookies.classList.add('activo');
+        }
+
+        // Funcion para activar Google Analytics y guardar en localStorage
+        function activarAnalytics(permitir) {
+            const estado = permitir ? 'granted' : 'denied';
+            gtag('consent', 'update', { 'analytics_storage': estado });
+            localStorage.setItem('cookiesAnaliticas', permitir.toString());
+        }
+
+        // Botn Aceptar Todas
+        document.getElementById('btn-aceptar').addEventListener('click', () => {
+            localStorage.setItem('estadoCookies', 'aceptadas');
+            activarAnalytics(true);
+            bannerCookies.classList.remove('activo');
+        });
+
+        // Boton Rechazar
+        document.getElementById('btn-rechazar').addEventListener('click', () => {
+            localStorage.setItem('estadoCookies', 'rechazadas');
+            activarAnalytics(false);
+            bannerCookies.classList.remove('activo');
+        });
+
+        // Botones de configuracion
+        document.getElementById('btn-configurar').addEventListener('click', () => {
+            modalCookies.classList.add('activo');
+        });
+
+        document.getElementById('btn-guardar-config').addEventListener('click', () => {
+            const analiticasActivadas = document.getElementById('check-analiticas').checked;
+            localStorage.setItem('estadoCookies', 'personalizadas');
+            activarAnalytics(analiticasActivadas);
+            modalCookies.classList.remove('activo');
+            bannerCookies.classList.remove('activo');
+        });
+    </script>
+
+    <script>
+        // FUNCIONAMIENTO DEL MENU HAMBURGUESA
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('activo');
+        });
+    </script>
+</body>
 
 </html>
