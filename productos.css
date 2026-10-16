@@ -4,7 +4,7 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('img/Hero2.webp');
 }
 
-/*CATÁLOGO DE MARCAS */
+/*CATALOGO DE MARCAS */
 .catalogo-acordeones {
     padding: 60px 5%;
     max-width: 1200px;
@@ -19,7 +19,6 @@
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-/* La barra azul que funciona como botón */
 .marca-acordeon summary {
     background-color: #38b6ff; 
     color: var(--color-blanco);
@@ -38,12 +37,10 @@
     background-color: var(--color-azul); 
 }
 
-/* Ocultar la flecha nativa en navegadores Safari/Chrome */
 .marca-acordeon summary::-webkit-details-marker {
     display: none;
 }
 
-/* Cuadrícula interna donde irán las cubetas de pintura */
 .grid-productos {
     display: flex;
     flex-wrap: wrap; 
@@ -85,7 +82,7 @@
     font-size: 0.85rem;
 }
 
-/* TIPOS DE RECUBRIMIENTOS */
+/*TIPOS DE RECUBRIMIENTOS*/
 .tipos-recubrimientos {
     padding: 60px 5%;
     max-width: 1200px;
@@ -106,7 +103,6 @@
     width: 320px; 
 }
 
-/* El botón y la foto funcionan como el interruptor del acordeón */
 .item-globito summary {
     list-style: none; 
     cursor: pointer;
@@ -122,7 +118,6 @@
     display: none;
 }
 
-/* Efecto de elevación al pasar el mouse (hover) */
 .item-globito summary:hover {
     transform: translateY(-8px);
 }
@@ -140,7 +135,6 @@
     max-width: 260px;
 }
 
-/* Contenedor circular perfecto para la foto */
 .circulo-img {
     width: 230px;
     height: 230px;
@@ -156,7 +150,6 @@
     object-fit: cover; 
 }
 
-/* La caja de texto que aparece al hacer clic */
 .info-desplegable {
     background-color: var(--color-blanco);
     border: 1px solid #eaeaea;
@@ -175,7 +168,6 @@
 /*Diseño responsivo*/
 
 /* PRODUCTOS*/
-
 @media (max-width: 768px) {
     .grid-productos {
         grid-template-columns: repeat(2, 1fr); 

@@ -32,7 +32,7 @@
     </head>
 
     <body>
-        <!--BARRA DE NAVEGACIÓN-->
+        <!--BARRA DE NAVEGACION-->
         <header>
             <div class="logo-container">
                 <img src="img/logoCemsa.webp" alt="Logo CEMSA" class="logo-img">
@@ -54,7 +54,7 @@
         </header>
 
         <main>
-            <!-- SECCIÓN: GRUPO CEMSA -->
+            <!-- SECCION GRUPO CEMSA -->
             <section class="hero-grupo-cemsa">
                 <div class="hero-gc-contenedor">
                     <div class="gc-imagen">
@@ -71,7 +71,7 @@
                 </div>
             </section>
 
-            <!-- SECCIÓN: INTRODUCCIÓN SOCIOS -->
+            <!-- SECCION INTRODUCCION SOCIOS -->
             <section class="intro-socios">
                 <div class="socios-header-texto">
                     <h2 class="titulo-seccion">Socios Comerciales:</h2>
@@ -145,7 +145,7 @@
                     <a href="https://mexico.ppg.com" target="_blank" class="btn-socio">Ver más...</a>
                 </div>
 
-                <!-- Socio 6: Norton -->
+                <!-- Socio Norton -->
                 <div class="card-socio">
                     <div class="socio-logo">
                         <img src="img/Norton.webp" loading="lazy" alt="Norton">
@@ -157,7 +157,7 @@
                     <a href="https://www.nortonabrasives.com/es-mx" target="_blank" class="btn-socio">Ver más...</a>
                 </div>
 
-                <!-- Socio 7: Roberlo -->
+                <!-- Socio Roberlo -->
                 <div class="card-socio">
                     <div class="socio-logo">
                         <img src="img/rOBERLO.webp" loading="lazy" alt="Roberlo">
@@ -169,7 +169,7 @@
                     <a href="https://es.roberlo.com" target="_blank" class="btn-socio">Ver más...</a>
                 </div>
 
-                <!-- Socio 8: 3M -->
+                <!-- Socio 3M -->
                 <div class="card-socio">
                     <div class="socio-logo">
                         <img src="img/3m.webp" loading="lazy" alt="3M">
@@ -183,7 +183,7 @@
             </section>
         </main>
 
-        <!--SECCIÓN FOOTER-->
+        <!--SECCION FOOTER-->
         <footer class="footer">
             <div class="footer-container">
                 <div class="footer-top-row">
@@ -216,16 +216,6 @@
                             <a href="https://x.com/cemsamx?lang=es" target="_blank" class="icono-red">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg" alt="X">
                             </a>
-
-                            <a href="" target="_blank" class="icono-red">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg"
-                                    alt="YouTube">
-                            </a>
-
-                            <a href="" target="_blank" class="icono-red">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg"
-                                    alt="Instagram">
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -242,12 +232,12 @@
                                     class="alianza-logo glow-azul"><img src="img/Cemsa.webp" loading="lazy"
                                         alt="CEMSA"></a>
                                 <a href="https://www.facebook.com/jarlserv?mibextid=ZbWKwL" target="_blank"
-                                    class="alianza-logo glow-blanco"><img src="img/Jarl.webp" loading="lazy"
+                                    class="alianza-logo glow-negro"><img src="img/Jarl.webp" loading="lazy"
                                         alt="Jarl"></a>
                             </div>
 
                             <div class="alianzas-centro">
-                                <a href="G.html" target="_blank" class="alianza-logo alianza-principal glow-gris"><img
+                                <a href="G.html" target="_blank" class="alianza-logo alianza-principal glow-blanco"><img
                                         src="img/GC22.webp" loading="lazy" alt="GC Grupo CEMSA"></a>
                             </div>
 
@@ -259,13 +249,13 @@
                                     class="alianza-logo glow-rosa"><img src="img/Nazareos AC.webp" loading="lazy"
                                         alt="Nazareos AC"></a>
                                 <a href="https://www.facebook.com/profile.php?id=100068549594726" target="_blank"
-                                    class="alianza-logo glow-verde"><img src="img/E&C.png" loading="lazy" alt="E&C"></a>
+                                    class="alianza-logo glow-gris"><img src="img/E&C.png" loading="lazy" alt="E&C"></a>
                             </div>
                         </div>
 
                         <div class="alianzas-fila-inferior">
                             <a href="https://www.facebook.com/EPP-107946225493285" target="_blank"
-                                class="alianza-logo glow-amarillo"><img src="img/EPP.webp" loading="lazy" alt="EPP"></a>
+                                class="alianza-logo glow-verde"><img src="img/EPP.webp" loading="lazy" alt="EPP"></a>
                             <a href="https://www.facebook.com/KumonSanJuanTultepec" target="_blank"
                                 class="alianza-logo glow-celeste"><img src="img/Kumon.webp" loading="lazy"
                                     alt="Kumon"></a>
@@ -284,8 +274,118 @@
             </div>
         </footer>
 
+        <!--SISTEMA DE COOKIES y GOOGLE ANALYTICS-->
+
+        <!-- 1. ConfiguraciOn de Google AnalyticS-->
         <script>
-            // FUNCIONAMIENTO DEL MENÚ HAMBURGUESA
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+
+            // Revisa si el usuario ya habIa aceptado antes, si no bloquea el rastreo por defecto
+            let estadoPrevio = localStorage.getItem('cookiesAnaliticas') === 'true' ? 'granted' : 'denied';
+
+            gtag('consent', 'default', {
+                'analytics_storage': estadoPrevio
+            });
+        </script>
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVL1WCKRJ7"></script>
+        <script>
+            gtag('js', new Date());
+            gtag('config', 'G-CVL1WCKRJ7');
+        </script>
+
+        <!-- 2. Banner de cookies-->
+        <div id="cookie-banner" class="cookie-banner">
+            <div class="cookie-texto">
+                <h3 style="margin-top:0; color:var(--color-azul);">Privacidad y Cookies</h3>
+                <p>Utilizamos cookies propias y de terceros para fines analíticos y para mostrarte contenido
+                    personalizado.
+                    Puedes aceptar todas las cookies, rechazarlas o configurar tus preferencias.</p>
+            </div>
+            <div class="cookie-botones">
+                <button id="btn-configurar" class="btn-cookie btn-secundario">Configurar</button>
+                <button id="btn-rechazar" class="btn-cookie btn-secundario">Rechazar</button>
+                <button id="btn-aceptar" class="btn-cookie btn-principal">Aceptar Todas</button>
+            </div>
+        </div>
+
+        <!-- 3. Modal de configuracion-->
+        <div id="cookie-modal" class="cookie-modal">
+            <div class="cookie-modal-contenido">
+                <h3 style="color:var(--color-azul); margin-top:0;">Configuración de Cookies</h3>
+                <p style="font-size: 0.9rem; color: #555;">Selecciona qué tipo de cookies deseas permitir en tu
+                    navegador:
+                </p>
+
+                <div class="opcion-cookie">
+                    <label>
+                        <input type="checkbox" checked disabled>
+                        <strong>Técnicas (Obligatorias)</strong>
+                    </label>
+                    <p>Son necesarias para que la página funcione. No se pueden desactivar.</p>
+                </div>
+
+                <div class="opcion-cookie">
+                    <label>
+                        <input type="checkbox" id="check-analiticas" checked>
+                        <strong>Google Analytics</strong>
+                    </label>
+                    <p>Nos ayudan a entender cómo usas la página para mejorar su diseño y funcionalidad.</p>
+                </div>
+
+                <button id="btn-guardar-config" class="btn-cookie btn-principal"
+                    style="width:100%; margin-top:20px;">Guardar Preferencias</button>
+            </div>
+        </div>
+
+        <!-- 4. Logica de los botones -->
+        <script>
+            const bannerCookies = document.getElementById('cookie-banner');
+            const modalCookies = document.getElementById('cookie-modal');
+
+            // Muestra el banner si es la primera vez que entra
+            if (!localStorage.getItem('estadoCookies')) {
+                bannerCookies.classList.add('activo');
+            }
+
+            // Funcion para activar Google Analytics y guardar en localStorage
+            function activarAnalytics(permitir) {
+                const estado = permitir ? 'granted' : 'denied';
+                gtag('consent', 'update', { 'analytics_storage': estado });
+                localStorage.setItem('cookiesAnaliticas', permitir.toString());
+            }
+
+            // Botn Aceptar Todas
+            document.getElementById('btn-aceptar').addEventListener('click', () => {
+                localStorage.setItem('estadoCookies', 'aceptadas');
+                activarAnalytics(true);
+                bannerCookies.classList.remove('activo');
+            });
+
+            // Boton Rechazar
+            document.getElementById('btn-rechazar').addEventListener('click', () => {
+                localStorage.setItem('estadoCookies', 'rechazadas');
+                activarAnalytics(false);
+                bannerCookies.classList.remove('activo');
+            });
+
+            // Botones de configuracion
+            document.getElementById('btn-configurar').addEventListener('click', () => {
+                modalCookies.classList.add('activo');
+            });
+
+            document.getElementById('btn-guardar-config').addEventListener('click', () => {
+                const analiticasActivadas = document.getElementById('check-analiticas').checked;
+                localStorage.setItem('estadoCookies', 'personalizadas');
+                activarAnalytics(analiticasActivadas);
+                modalCookies.classList.remove('activo');
+                bannerCookies.classList.remove('activo');
+            });
+        </script>
+
+        <script>
+            // FUNCIONAMIENTO DEL MENU HAMBURGUESA
             const menuToggle = document.getElementById('menu-toggle');
             const navMenu = document.getElementById('nav-menu');
 
