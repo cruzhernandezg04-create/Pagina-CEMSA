@@ -4,30 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <title>CEMSA | Recubrimientos industriales, arquitectónicos y automotrices</title>
+    <meta name="description"
+        content="Más de una década entregando soluciones integrales en compra, venta, distribución y aplicación de recubrimientos industriales, arquitectónicos y automotrices.">
     <link rel="icon" href="img/cemsis.webp">
-    <title>CEMSA</title>
+
     <!-- Preconexiones para acelerar carga externa -->
     <link rel="preconnect" href="https://www.google.com" crossorigin>
     <link rel="preconnect" href="https://www.facebook.com" crossorigin>
-    <!--Animaciones AOS-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVL1WCKRJ7"></script>
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
+
+    <!-- La imagen del hero se pide desde el inicio (mejora el LCP) -->
+    <link rel="preload" as="image" href="img/Hero1.webp" fetchpriority="high">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!--Animaciones AOS: el CSS se carga sin bloquear el render-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    </noscript>
+
+    <!-- Google Analytics: primero el consentimiento (por defecto denegado), después la configuración -->
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
 
+        // Si el usuario ya aceptó antes, se concede; si no, se bloquea el rastreo por defecto
+        var estadoPrevio = 'denied';
+        try {
+            estadoPrevio = localStorage.getItem('cookiesAnaliticas') === 'true' ? 'granted' : 'denied';
+        } catch (e) { }
+
+        gtag('consent', 'default', { 'analytics_storage': estadoPrevio });
+        gtag('js', new Date());
         gtag('config', 'G-CVL1WCKRJ7');
     </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVL1WCKRJ7"></script>
 </head>
 
 <body>
     <!--BARRA DE NAVEGACION-->
     <header>
         <div class="logo-container">
-            <img src="img/logoCemsa.webp" loading="lazy" alt="Logo CEMSA" class="logo-img">
+            <img src="img/logoCemsa.webp" alt="Logo CEMSA" class="logo-img">
         </div>
         <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación">☰</button>
         <nav id="nav-menu">
@@ -36,7 +56,7 @@
                 <li><a href="productos.html">Productos</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
                 <li><a href="enlaces.html">Enlaces</a></li>
-                <li><a href="#contacto">Contactanos</a></li>
+                <li><a href="#contacto">Contáctanos</a></li>
             </ul>
         </nav>
 
@@ -46,9 +66,9 @@
 
     <!--SECCION HERO-->
     <section class="hero">
-        <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+        <div class="hero-content">
             <div class="etiqueta">Recubrimientos industriales, arquitectónicos y automotrices</div>
-            <h2>Coatings Especiales y Multifuncionales</h2>
+            <h1>Coatings Especiales y Multifuncionales</h1>
             <p>Más de una década entregando soluciones integrales en compra, venta, distribución y aplicación de
                 recubrimientos para el sector industrial y automotriz. No solo vendemos productos: resolvemos tu
                 necesidad.
@@ -107,7 +127,7 @@
                 <img src="img/Granallado.webp" loading="lazy" alt="Sectores Económicos" class="img-destacada">
                 <h3>Sectores Económicos</h3>
                 <p>Comercializamos recubrimientos para industria civil, marina, petroquímica, energía, petróleo y gas,
-                    offshore e industria ferroviariamas y mas.</p>
+                    offshore e industria ferroviaria y más.</p>
             </div>
 
             <!--Tarjeta 3-->
@@ -167,9 +187,9 @@
             <span class="etiqueta-identidad">IDENTIDAD PMC-PC</span>
             <h2>Conoce nuestra identidad<br>PMC-PC</h2>
             <p>Abarcamos diferentes sectores de la industria, Nuestro compromiso es proporcionar soluciones a partir de
-                sus necesidades, ofreciendo el recubrimiento optimo para alcanzar las propiedades y caracteristicas que
+                sus necesidades, ofreciendo el recubrimiento óptimo para alcanzar las propiedades y características que
                 requieres.</p>
-            <a href="productos.html#identidad-pmc" class="btn-explorar">Ver mas...</a>
+            <a href="productos.html#identidad-pmc" class="btn-explorar">Ver más...</a>
         </div>
     </section>
 
@@ -225,14 +245,14 @@
                     así como
                     el apoyo para que su negocio sea más eficiente en tiempos y rentable en costos.
                 </p>
-                <a href="servicios.html#soporte" class="btn-explorar btn-espaciado">Ver mas...</a>
+                <a href="servicios.html#soporte" class="btn-explorar btn-espaciado">Ver más...</a>
             </div>
 
             <div class="columna-info" data-aos="fade-left" data-aos-delay="100">
                 <h2 class="titulo-conocenos">Compromiso</h2>
                 <p class="subtitulo-conocenos">El compromiso de Coatings Especiales y Multifuncionales S.A. de C.V.
                     (CEMSA) es ser socios estratégicos de negocios con nuestros clientes, apoyo en cada proceso de la
-                    cadena de suministro, así como el respaldo en la aplicación y optimo desempeño de los productos que
+                    cadena de suministro, así como el respaldo en la aplicación y óptimo desempeño de los productos que
                     distribuimos, representamos un valor agregado para usted. Conoce lo que ofrecemos y permítenos
                     crecer contigo.</p>
             </div>
@@ -259,25 +279,27 @@
 
             <!--Columna de contactanos-->
             <div class="card-interaccion" data-aos="fade-up" data-aos-delay="200">
-                <div class="cabecera-azul">Contactános</div>
-                <p class="desc-interaccion">Para nosotros eres importante, dejanos un mensaje.</p>
+                <div class="cabecera-azul">Contáctanos</div>
+                <p class="desc-interaccion">Para nosotros eres importante, déjanos un mensaje.</p>
                 <form action="https://formsubmit.co/reclutamiento@gensolution.com.mx" method="POST"
                     class="formulario-moderno">
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_subject" value="Nuevo contacto desde la web de CEMSA">
 
                     <div class="grupo-input">
-                        <label>Nombre Completo</label>
-                        <input type="text" name="Nombre" placeholder="Ej. Juan Daniel Reyes Trejo" required>
+                        <label for="contacto-nombre">Nombre Completo</label>
+                        <input type="text" id="contacto-nombre" name="Nombre" placeholder="Ej. Juan Daniel Reyes Trejo"
+                            required>
                     </div>
                     <div class="grupo-input">
-                        <label>Correo Electrónico</label>
-                        <input type="email" name="Correo" placeholder="Ej. juan@gmail.com" required>
+                        <label for="contacto-correo">Correo Electrónico</label>
+                        <input type="email" id="contacto-correo" name="Correo" placeholder="Ej. juan@gmail.com"
+                            required>
                     </div>
                     <div class="grupo-input">
-                        <label>Asunto</label>
-                        <textarea name="Mensaje" rows="4" placeholder="Cuéntanos en que podemos ayudarte..."
-                            required></textarea>
+                        <label for="contacto-mensaje">Mensaje</label>
+                        <textarea id="contacto-mensaje" name="Mensaje" rows="4"
+                            placeholder="Cuéntanos en qué podemos ayudarte..." required></textarea>
                     </div>
                     <div style="font-size: 12px; color: #666; margin-bottom: 15px; text-align: left;">
                         <input type="checkbox" required id="terminos-contacto">
@@ -300,17 +322,18 @@
                     <input type="hidden" name="_subject" value="Nuevo CV recibido desde la web de CEMSA">
 
                     <div class="grupo-input">
-                        <label>Nombre Completo</label>
-                        <input type="text" name="Nombre" placeholder="Ej. Juan Daniel Reyes Trejo" required>
+                        <label for="cv-nombre">Nombre Completo</label>
+                        <input type="text" id="cv-nombre" name="Nombre" placeholder="Ej. Juan Daniel Reyes Trejo"
+                            required>
                     </div>
                     <div class="grupo-input">
-                        <label>Correo Electrónico</label>
-                        <input type="email" name="Correo" placeholder="Ej. juan@gmail.com" required>
+                        <label for="cv-correo">Correo Electrónico</label>
+                        <input type="email" id="cv-correo" name="Correo" placeholder="Ej. juan@gmail.com" required>
                     </div>
                     <div class="grupo-input">
-                        <label>Asunto</label>
-                        <textarea name="Mensaje" rows="4"
-                            placeholder="Por favor indicanos si quieres hacer tu servicio social, ser becario, o ¿te gustaria tener un punto de venta?"
+                        <label for="cv-mensaje">Asunto</label>
+                        <textarea id="cv-mensaje" name="Mensaje" rows="4"
+                            placeholder="Por favor indícanos si quieres hacer tu servicio social, ser becario, o ¿te gustaría tener un punto de venta?"
                             required></textarea>
                     </div>
                     <div style="font-size: 12px; color: #666; margin-bottom: 15px; text-align: left;">
@@ -395,7 +418,7 @@
                         <li><a href="productos.html">Productos</a></li>
                         <li><a href="servicios.html">Servicios</a></li>
                         <li><a href="enlaces.html">Enlaces</a></li>
-                        <li><a href="index.html#contacto">Contactanos</a></li>
+                        <li><a href="index.html#contacto">Contáctanos</a></li>
                     </ul>
                 </div>
 
@@ -467,29 +490,12 @@
     </footer>
 
     <!--SCRIPTS-->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <!--SISTEMA DE COOKIES y GOOGLE ANALYTICS-->
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         // Inicializar Animaciones AOS (once: true para mayor elegancia corporativa)
-        AOS.init({ once: true, offset: 100 });
-
-        //1. ConfiguraciOn de Google AnalyticS>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-
-        // Revisa si el usuario ya habIa aceptado antes, si no bloquea el rastreo por defecto
-        let estadoPrevio = localStorage.getItem('cookiesAnaliticas') === 'true' ? 'granted' : 'denied';
-
-        gtag('consent', 'default', {
-            'analytics_storage': estadoPrevio
+        document.addEventListener('DOMContentLoaded', function () {
+            if (window.AOS) { AOS.init({ once: true, offset: 100 }); }
         });
-    </script>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVL1WCKRJ7"></script>
-    <script>
-        gtag('js', new Date());
-        gtag('config', 'G-CVL1WCKRJ7');
     </script>
 
     <!-- 2. Banner de cookies-->
