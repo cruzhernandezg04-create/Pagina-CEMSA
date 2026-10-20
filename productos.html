@@ -5,30 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos | CEMSA</title>
+    <meta name="description" content="Catálogo de productos CEMSA: recubrimientos de las marcas Sikkens, Wanda, U-Tech, International, Hempel, PPG y Sherwin.">
+    <link rel="preload" as="image" href="img/Hero2-movil.webp" media="(max-width: 768px)" fetchpriority="high">
+    <link rel="preload" as="image" href="img/Hero2.webp" media="(min-width: 769px)" fetchpriority="high">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="productos.css">
     <link rel="icon" href="img/cemsis.webp">
-    <!-- Preconexiones para acelerar carga externa -->
-    <link rel="preconnect" href="https://www.google.com" crossorigin>
-    <link rel="preconnect" href="https://www.facebook.com" crossorigin>
-    <!--Animaciones AOS-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVL1WCKRJ7"></script>
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"></noscript>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
+        var estadoPrevio = 'denied';
+        try { estadoPrevio = localStorage.getItem('cookiesAnaliticas') === 'true' ? 'granted' : 'denied'; } catch (e) { }
+        gtag('consent', 'default', { 'analytics_storage': estadoPrevio });
         gtag('js', new Date());
-
         gtag('config', 'G-CVL1WCKRJ7');
     </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVL1WCKRJ7"></script>
 </head>
 
 <body>
     <!--BARRA DE NAVEGACION-->
     <header>
         <div class="logo-container">
-            <img src="img/logoCemsa.webp" loading="lazy" alt="Logo CEMSA" class="logo-img">
+            <img src="img/logoCemsa.webp" alt="Logo CEMSA" class="logo-img">
         </div>
         <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación">☰</button>
 
@@ -38,7 +40,7 @@
                 <li><a href="productos.html">Productos</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
                 <li><a href="enlaces.html">Enlaces</a></li>
-                <li><a href="index.html#contacto">Contactanos</a></li>
+                <li><a href="index.html#contacto">Contáctanos</a></li>
             </ul>
         </nav>
         <div class="header-actions">
@@ -47,7 +49,7 @@
     <main>
         <!--HERO-->
         <section class="hero hero-productos">
-            <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+            <div class="hero-content">
                 <div class="etiqueta">Productos</div>
                 <h1>Encuentra aquí las mejores promociones y descuentos especiales que tenemos para nuestros clientes.
                     Manejamos las mejores marcas y los precios más competitivos.</h1>
@@ -508,7 +510,7 @@
                             <li><a href="productos.html">Productos</a></li>
                             <li><a href="servicios.html">Servicios</a></li>
                             <li><a href="enlaces.html">Enlaces</a></li>
-                            <li><a href="index.html#contacto">Contactanos</a></li>
+                            <li><a href="index.html#contacto">Contáctanos</a></li>
                         </ul>
                     </div>
                     <div class="footer-col">
@@ -574,29 +576,11 @@
         </footer>
 
         <!--SCRIPTS-->
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-        <!--SISTEMA DE COOKIES y GOOGLE ANALYTICS-->
+        <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
-            // Inicializar Animaciones AOS (once: true)
-            AOS.init({ once: true, offset: 100 });
-
-            //1. ConfiguraciOn de Google AnalyticS
-            window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
-
-            // Revisa si el usuario ya habIa aceptado antes, si no bloquea el rastreo por defecto
-            let estadoPrevio = localStorage.getItem('cookiesAnaliticas') === 'true' ? 'granted' : 'denied';
-
-            gtag('consent', 'default', {
-                'analytics_storage': estadoPrevio
+            document.addEventListener('DOMContentLoaded', function () {
+                if (window.AOS) { AOS.init({ once: true, offset: 100 }); }
             });
-        </script>
-
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVL1WCKRJ7"></script>
-        <script>
-            gtag('js', new Date());
-            gtag('config', 'G-CVL1WCKRJ7');
         </script>
 
         <!-- 2. Banner de cookies-->
