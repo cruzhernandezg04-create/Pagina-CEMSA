@@ -1196,6 +1196,7 @@ nav a:hover {
 
     /* Seccion del Hero */
     .hero {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('img/Hero1-movil.webp');
         height: auto !important;
         min-height: 60vh;
         padding: 80px 5% !important;

@@ -13,7 +13,8 @@
     <link rel="preconnect" href="https://unpkg.com" crossorigin>
 
     <!-- La imagen del hero se pide desde el inicio (mejora el LCP) -->
-    <link rel="preload" as="image" href="img/Hero1.webp" fetchpriority="high">
+    <link rel="preload" as="image" href="img/Hero1-movil.webp" media="(max-width: 768px)" fetchpriority="high">
+    <link rel="preload" as="image" href="img/Hero1.webp" media="(min-width: 769px)" fetchpriority="high">
 
     <link rel="stylesheet" href="styles.css">
 
