@@ -57,7 +57,7 @@
     display: none;
 }
 
-/* Menú lateral izquierdo */
+/* MenU lateral izquierdo */
 .menu-tabs {
     display: flex;
     flex-direction: column;
@@ -355,7 +355,6 @@
 
 @media (max-width: 768px) {
 
-    /* Convierte el menú lateral en un menú superior apilado */
     .contenedor-tabs {
         flex-direction: column;
     }
@@ -374,7 +373,6 @@
         font-size: 0.9rem;
     }
 
-    /* Apila las imágenes del contenido abajo del texto */
     .panel-cuerpo {
         flex-direction: column;
         text-align: center;

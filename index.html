@@ -5,31 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CEMSA | Recubrimientos industriales, arquitectónicos y automotrices</title>
-    <meta name="description"
-        content="Más de una década entregando soluciones integrales en compra, venta, distribución y aplicación de recubrimientos industriales, arquitectónicos y automotrices.">
+    <meta name="description" content="Más de una década entregando soluciones integrales en compra, venta, distribución y aplicación de recubrimientos industriales, arquitectónicos y automotrices.">
     <link rel="icon" href="img/cemsis.webp">
 
-    <!-- Preconexión al CDN de AOS (los de Google y Facebook se quitaron: no se usaban) -->
     <link rel="preconnect" href="https://unpkg.com" crossorigin>
 
-    <!-- La imagen del hero se pide desde el inicio (mejora el LCP) -->
     <link rel="preload" as="image" href="img/Hero1-movil.webp" media="(max-width: 768px)" fetchpriority="high">
     <link rel="preload" as="image" href="img/Hero1.webp" media="(min-width: 769px)" fetchpriority="high">
 
     <link rel="stylesheet" href="styles.css">
 
-    <!--Animaciones AOS: el CSS se carga sin bloquear el render-->
+    <!--Animaciones AOS-->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" media="print" onload="this.media='all'">
     <noscript>
         <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     </noscript>
 
-    <!-- Google Analytics: primero el consentimiento (por defecto denegado), después la configuración -->
+    <!-- Google Analytics-->
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
 
-        // Si el usuario ya aceptó antes, se concede; si no, se bloquea el rastreo por defecto
         var estadoPrevio = 'denied';
         try {
             estadoPrevio = localStorage.getItem('cookiesAnaliticas') === 'true' ? 'granted' : 'denied';
@@ -491,7 +487,7 @@
     <!--SCRIPTS-->
     <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        // Inicializar Animaciones AOS (once: true para mayor elegancia corporativa)
+        // Inicializar Animaciones AOS 
         document.addEventListener('DOMContentLoaded', function () {
             if (window.AOS) { AOS.init({ once: true, offset: 100 }); }
         });
